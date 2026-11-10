@@ -1,0 +1,31 @@
+:root{--papier:#F5F0E6;--encre:#16181D;--accent:#E4572E;--gris:#5E6068;--ligne:#DDD5C4}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--papier);color:var(--encre);font:18px/1.55 Georgia,"Times New Roman",serif;padding-bottom:88px}
+.f{font-family:"Fraunces",Georgia,serif}
+main,header,footer,section{max-width:640px;margin:0 auto;padding:0 20px}
+header{padding-top:20px;padding-bottom:4px;font-weight:700;letter-spacing:.02em}
+header span{color:var(--accent)}
+h1{font-family:"Fraunces",Georgia,serif;font-weight:800;font-size:clamp(34px,9vw,52px);line-height:1.05;margin:28px 0 16px;letter-spacing:-.02em}
+h1 em{font-style:normal;color:var(--accent)}
+h2{font-family:"Fraunces",Georgia,serif;font-size:26px;line-height:1.15;margin:0 0 12px}
+p{margin-bottom:14px}
+.lead{font-size:20px;color:var(--gris)}
+.btn{display:block;text-align:center;background:var(--accent);color:#fff;text-decoration:none;font:700 19px/1 system-ui,sans-serif;padding:20px 16px;border-radius:10px;min-height:56px}
+.btn:active{transform:translateY(1px)}
+.note{font:14px/1.4 system-ui,sans-serif;color:var(--gris);text-align:center;margin-top:10px}
+.calc{border:2px solid var(--encre);border-radius:12px;padding:18px;margin:32px 0;background:#fff}
+.calc b{font-family:"Fraunces",Georgia,serif;font-size:40px;color:var(--accent);display:block;line-height:1}
+.calc small{font:14px system-ui,sans-serif;color:var(--gris)}
+section{padding-top:28px;padding-bottom:8px}
+ol{list-style:none;counter-reset:n}
+ol li{counter-increment:n;padding:14px 0 14px 46px;position:relative;border-top:1px solid var(--ligne)}
+ol li::before{content:counter(n);position:absolute;left:0;top:12px;width:32px;height:32px;border-radius:50%;background:var(--encre);color:var(--papier);font:700 16px/32px system-ui,sans-serif;text-align:center}
+ol li strong{display:block}
+.sticky{position:fixed;left:0;right:0;bottom:0;background:var(--papier);border-top:1px solid var(--ligne);padding:12px 20px calc(12px + env(safe-area-inset-bottom))}
+.sticky .btn{max-width:600px;margin:0 auto}
+footer{padding-top:32px;padding-bottom:24px;font:14px/1.8 system-ui,sans-serif;color:var(--gris)}
+footer a{color:var(--gris);margin-right:14px}
+.legal h1{font-size:30px}.legal h2{font-size:20px;margin-top:22px}
+.legal p,.legal li{font-size:16px}.legal ul{margin:0 0 14px 20px}
+.tbd{background:#FFE9A8;padding:0 4px;border-radius:3px}
